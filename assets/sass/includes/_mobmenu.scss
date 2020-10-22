@@ -1,0 +1,139 @@
+.mobile_buts{
+  display: none;
+  .login_btn{
+    padding: 14px 15px;
+  }
+  .sign_btn{
+    padding: 13px 15px;
+    border-radius: 2px;
+    border: 1px solid;
+    margin-right: 14px;
+  }
+  @include _media-xs-down() {
+    display: flex;
+    align-items: center;
+    a{
+      //padding-left: 15px !important;
+    }
+
+  }
+}
+
+.menu_mobile_block {
+  position: fixed;
+  width: 83%;
+  min-width: 270px;
+  background: $white;
+  opacity: 1;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: -130vw;
+  -webkit-transition: right ease-out 250ms;
+  -o-transition: right ease-out 250ms;
+  transition: right ease-out 250ms;
+  z-index: 99999;
+  padding: 0px 25px 0 25px;
+  overflow-y: auto;
+li{
+  border-bottom: 1px solid #ECECEC;
+  a{
+    padding-left: 300px !important;
+    display: inline-block;
+    -webkit-transition: padding-left 500ms;
+    -o-transition: padding-left 500ms;
+    transition: padding-left 500ms;
+
+  }
+  &:last-child {
+    border-bottom: 0px solid #ECECEC;
+  }
+}
+  &.active {
+    display: block;
+    right: 0;
+    -webkit-transition: right ease-out 250ms;
+    -o-transition: right ease-out 250ms;
+    transition: right ease-out 250ms;
+li{
+  a{
+    padding-left: 0px !important;
+    -webkit-transition: padding-left 500ms;
+    -o-transition: padding-left 500ms;
+    transition: padding-left 500ms;
+
+  }
+}
+}
+
+
+  ul {
+    li {
+      display: block;
+      position: relative;
+      line-height: 44px;
+      a {
+        letter-spacing: 0.3px;
+        color: $brand-hover;
+        font-size: 14px;
+        opacity: 0.9;
+        display: inline-block;
+      }
+      .sub_menu {
+        display: none;
+        li{
+          .parent{
+            border-bottom: 0px solid #000;
+            a {
+              padding: 0 !important;
+              color: $brand-hover;
+              font-size: $base-sm;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+
+      &.has-child {
+        span {
+          color:$brand-hover;
+          float: right;
+          width: 32px;
+          height: 32px;
+          line-height: 24px;
+          display: block;
+          -webkit-border-radius: 4px;
+          text-align: center;
+          margin-top: 5px;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          &:focus {
+            background: $white;
+            color: $brand-primary;
+          }
+          i{
+            font-size: 12px;
+          }
+        }
+        &.active {
+          span {
+            i:before {
+              content: "\f078";
+            }
+          }
+          .sub_menu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu_mobile{
+  padding-top: 50px;
+  //height: 90vh;
+  //min-height: 500px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,210 @@
+footer {
+  color: white;
+  overflow: hidden;
+  position: relative;
+  background-color: $background;
+  h3, h4, h5, h6 {
+    color: white;
+  }
+
+  .footer_background {
+    background: linear-gradient(90deg, #11CDD6 30%, #3DB5E6 80%);
+    border-radius: 50% 50% 0 0;
+    width: 300%;
+    margin-left: -100%;
+    padding: 0 100%;
+    padding-top: 90px;
+    @include  _media-xs-down() {
+      width: 500%;
+      margin-left: -200%;
+      padding: 0 200%;
+      padding-top: 60px;
+    }
+  }
+
+
+  .col-md-3 {
+    ul {
+      margin-top: 20px;
+     li{
+       a {
+         line-height: 2.4em;
+         color: white;
+         letter-spacing: 0.04em;
+         font-size: $base-lg;
+         @include  _media-xs-down() {
+           font-size: $base;
+         }
+         &:hover {
+           color: $brand-hover;
+         }
+       }
+     }
+
+    }
+    @include  _media-xs-down() {
+    margin-bottom: 35px;
+      ul{
+        margin-top: 10px;
+        li{
+          margin-bottom: 8px;
+          a{
+            line-height: 1.3em;
+          }
+        }
+
+      }
+    }
+    }
+
+  .footer_social_block {
+    text-align: right;
+
+    a {
+      margin-bottom: 15px;
+      display: inline-block;
+      width: 220px;
+      background-color: $dark-blue;
+      padding: 10px 20px;
+      border-radius: 6px;
+      &:hover{
+        box-shadow: 0px 0px 0px 2px white;
+        background-color: #1289a4 !important;
+      }
+      img{
+        width: 100%;
+      }
+      @include  _media-md-down() {
+        width: 100%;
+      }
+      @include  _media-small-down() {
+        margin-bottom: 15px;
+      }
+    }
+
+    .social_link {
+      margin-top: 35px;
+
+      a {
+        font-size: 16px;
+        color: white;
+        border-radius: 50%;
+        padding: unset;
+        background-color: $dark-blue;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        margin-left: 24px;
+        @include  _media-md-down() {
+          margin-left: 8px;
+        }
+
+          .fa {
+          margin: auto;
+        }
+      }
+
+    }
+
+    @include  _media-small-down() {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      a{
+        margin-bottom: 0;
+        width: 30%;
+        margin-right: 10px;
+        text-align: center;
+      }
+      .social_link {
+        margin-top: 0;
+        width: 30%;
+        text-align: right;
+        a{
+          margin-left: 0;
+        }
+
+      }
+    }
+
+    @include  _media-xs-down() {
+      text-align: left;
+      display: block;
+      align-items: center;
+      padding-top: 0px;
+      a{
+        margin-bottom: 0;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+        text-align: left;
+      }
+      .social_link {
+        width: 100%;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 0;
+        a{
+          margin-right: 9px;
+        }
+      }
+         }
+         }
+
+  .footer_line {
+    width: 110%;
+    height: 2px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 50px 0;
+    margin-left: -5%;
+    @include  _media-lg-down() {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include  _media-xs-down() {
+     margin-top: 20px;
+      }
+  }
+
+  .footer_text_block {
+    text-align: center;
+    margin-bottom: 50px;
+h4{
+  @include  _media-xs-down() {
+    font-size: 14px !important;
+  }
+}
+    p {
+      padding-top: 20px;
+      opacity: 0.6;
+      font-size: $base;
+      @include  _media-small-down() {
+        font-size: $base-sm;
+      }
+      @include  _media-xs-down() {
+        font-size: 12px !important;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: $dark-blue;
+    padding: 15px 0;
+
+    p {
+      padding: 0;
+      letter-spacing: 0.6px;
+      @include  _media-xs-down() {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+  }
+
+}

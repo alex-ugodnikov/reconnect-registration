@@ -1,0 +1,130 @@
+@import "main.css";
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'Font Awesome 5 Light';
+    src: url('../fonts/fa-light-300.eot');
+    src: url('../fonts/fa-light-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fa-light-300.woff') format('woff'),
+    url('../fonts/fa-light-300.woff2') format('woff2'),
+    url('../fonts/fa-light-300.svg') format("svg"),
+    url('../fonts/fa-light-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.fal {font-family: "Font Awesome 5 Light";}
+
+
+.footer_background{
+    padding-top: 50px !important;
+}
+
+.footer_background .col-md-12{
+    text-align: center;
+}
+
+.footer_background .col-md-12 ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.footer_background .col-md-12 ul li{
+    margin: 0 15px;
+}
+
+.footer_background .col-md-12 ul a{
+  color: white;
+}
+
+.footer_background .social_link{
+    margin-bottom: 0px;
+}
+
+.footer_background .social_link{
+    margin: auto !important;
+    margin-bottom: 30px !important;
+    margin-top: 35px !important;
+    text-align: center !important;
+}
+
+.social_link a{
+    margin: 0 12px;
+}
+
+
+/*////////////////////////////////////*/
+
+.dot-flashing {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 16px;
+    background-color: #0fcd38;
+    color: #0fcd38;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: .5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -19px;
+    width: 14px;
+    height: 14px;
+    border-radius: 16px;
+    background-color: #0fcd38;
+    color: #0fcd38;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 19px;
+    width: 14px;
+    height: 14px;
+    border-radius: 16px;
+    background-color: #0fcd38;
+    color: #0fcd38;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: #0fcd38;
+    }
+    50%,
+    100% {
+        background-color: #ebe6ff;
+    }
+}
+.container_step{
+    padding-left: 10%;
+}
+.what_do_you_need_section .steps .container_step>div {
+    width: 90%;
+}
+
+.snippet{
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.what_do_you_need_section .steps .profile_pic h6 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.profile_img_block{
+    width: 100px;
+}
+.profile_img_block img{
+   width: 100%;
+    height: auto;
+}

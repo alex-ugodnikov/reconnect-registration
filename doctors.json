@@ -1,0 +1,94 @@
+[
+{
+    "id": 1,
+    "lightning": "lightning_true",
+    "star": "star_true",
+    "specialty": "Dermatologist",
+    "classification": "MSc (immunology)",
+    "stars": "5",
+    "feedback": "127",
+    "city":"Miami, FL",
+    "calendar": "tu",
+    "name": "Amy-Leigh Tucker",
+    "image": "/images/doctors/1.png"
+   
+},
+{
+    "id": 2,
+    "lightning": "lightning_false",
+    "star": "star_false",
+    "specialty": "Pediatrician",
+    "classification": "MBBS, MCPS",
+    "stars": "5",
+    "feedback": "127",
+    "city":"New York, NY",
+    "calendar": "th",
+    "name": "Leonidas Gentry",
+    "image": "/images/doctors/2.png"
+},
+{
+    "id": 3,
+    "lightning": "lightning_false",
+    "star": "star_true",
+    "specialty": "Dermatologist",
+    "classification": "FAAAAI (USA)",
+    "stars": "5",
+    "feedback": "127",
+    "city":"New York, NY",
+    "calendar": "we",
+    "name": "Dr. Julia Amenta",
+    "image": "/images/doctors/3.png"
+},
+{
+    "id": 4,
+    "lightning": "lightning_true",
+    "star": "star_true",
+    "specialty": "Traumatologist",
+    "classification": "PhD, Dip Allergy",
+    "stars": "4",
+    "feedback": "127",
+    "city":"Miami, FL",
+    "calendar": "th",
+    "name": "Dr. Kaleb Cunningham",
+    "image": "/images/doctors/4.png"
+},
+{
+    "id": 5,
+    "lightning": "lightning_false",
+    "star": "star_false",
+    "specialty": "Dermatologist",
+    "classification": "MBBS",
+    "stars": "5",
+    "feedback": "812",
+    "city":"Miami, FL",
+    "calendar": "fr",
+    "name": "Pamela Searle",
+    "image": "/images/doctors/5.png"
+},
+{
+    "id": 6,
+    "lightning": "lightning_true",
+    "star": "star_true",
+    "specialty": "Dermatologist",
+    "classification": "MBBS",
+    "stars": "5",
+    "feedback": "1217",
+    "city":"Miami, FL",
+    "calendar": "th",
+    "name": "Pamela Searle",
+    "image": "/images/doctors/1.png"
+},
+{
+    "id": 7,
+    "lightning": "lightning_true",
+    "star": "star_true",
+    "specialty": "Urologist",
+    "classification": "FAAAAI (USA)",
+    "stars": "5",
+    "feedback": "127",
+    "city":"New York, NY",
+    "calendar": "we",
+    "name": "Dr. Julia Amenta",
+    "image": "/images/doctors/3.png"
+}
+]
