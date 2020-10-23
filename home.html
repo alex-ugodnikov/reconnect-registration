@@ -1,598 +1,564 @@
 <!DOCTYPE HTML>
 
 <html>
-
 <head>
     <title>reconnectcare</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <!--    <link rel="stylesheet" href="resources/demos/style.css">-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<!--    <link rel="stylesheet" href="resources/demos/style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
-
 <body>
-    <div id="root">
-        <div class="app">
-            <div class="app_main">
-                <header>
-                    <div class="col-auto head_burger">
-                        <button id="hamb_button" class="hamburger hamburger--collapse" type="button"><span
-                                class="hamburger-box"><span class="hamburger-inner"></span></span></button>
-                    </div>
-                    <div class="header_block header_fluid">
-                        <div class="container-fluid height_100">
-                            <div class="row head_menu align-items-center height_100">
-                                <div class="col-auto header_logo">
-                                    <a href="#"><img src="images/header_logo.png" alt=""></a>
-                                </div>
-                                <div class="col-auto menu">
-                                    <ul class="menu_container">
-                                        <li><a href="#">Getting Started</a></li>
-                                        <li><a href="#">Your Digital Clinic</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col buts">
-                                    <a href="#" class="sign_btn">Sign Up</a>
-                                    <a href="#" class="login_btn"><i class="fa fa-user-circle"></i> Patient Login </a>
-                                </div>
-
+<div id="root">
+    <div class="app">
+        <div class="app_main">
+            <header>
+                <div class="col-auto head_burger">
+                    <button id="hamb_button" class="hamburger hamburger--collapse" type="button"><span
+                            class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                </div>
+                <div class="header_block header_fluid">
+                    <div class="container-fluid height_100">
+                        <div class="row head_menu align-items-center height_100">
+                            <div class="col-auto header_logo">
+                                <a href="#"><img src="images/header_logo.png" alt=""></a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="menu_mobile_block ">
-                        <ul class="menu_mobile">
-                            <li class="sub_menu_parent"><a href="#">Getting Started</a>
-                                <ul class="sub_menu_none">
+                            <div class="col-auto menu">
+                                <ul class="menu_container">
                                     <li><a href="#">Getting Started</a></li>
                                     <li><a href="#">Your Digital Clinic</a></li>
                                     <li><a href="#">Pricing</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Your Digital Clinic</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
-                        <div class=" mobile_buts">
-                            <a href="#" class="sign_btn">Sign Up</a>
-                            <a href="#" class="login_btn"><i class="fa fa-user-circle"></i> Patient Login </a>
-                        </div>
+                            </div>
+                            <div class="col buts">
+                                <a href="#" class="sign_btn">Sign Up</a>
+                                <a href="#" class="login_btn"><i class="fa fa-user-circle"></i> Patient Login </a>
+                            </div>
 
-                    </div>
-                    <div class="bg "></div>
-                </header>
-
-
-
-
-                <!--            <div class="my_cam_mob">-->
-                <!--                <div><img src="images/connect-cam.svg" alt="connect-cam">-->
-                <!--                    <p>Turn On My Cam</p></div>-->
-                <!--            </div>-->
-
-                <section class="what_do_you_need_section container-fluid">
-                    <div class="my_cam">
-                        <div><img src="images/connect-cam.svg" alt="connect-cam">
-                            <p>Turn On My Cam</p>
                         </div>
                     </div>
-                    <div class="container what_do_you_need_container">
-                        <form>
-                            <div id="step_1" class="active">
-                                <div class="step_animate">
-                                    <h1>What do you need today?</h1>
-                                    <h6>Launch a video consultation now for a prescription, lab, or if you not feeling
-                                        well.</h6>
-                                    <ul class="what_do_you_need_ul">
-                                        <li><img src="images/im_not.svg" alt="im_not">
-                                            <p> I'm not Feeling Well</p>
-                                        </li>
-                                        <li><img src="images/prescription.svg" alt="prescription">
-                                            <p> A Prescription</p>
-                                        </li>
-                                        <li><img src="images/lab_request.svg" alt="lab_request">
-                                            <p> A Lab Request </p>
-                                        </li>
-                                        <li><img src="images/covid.svg" alt="covid">
-                                            <p> Covid-19</p>
-                                        </li>
-                                    </ul>
+                </div>
+
+                <div class="menu_mobile_block ">
+                    <ul class="menu_mobile">
+                        <li class="sub_menu_parent"><a href="#">Getting Started</a>
+                            <ul class="sub_menu_none">
+                                <li><a href="#">Getting Started</a></li>
+                                <li><a href="#">Your Digital Clinic</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Your Digital Clinic</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <div class=" mobile_buts">
+                        <a href="#" class="sign_btn">Sign Up</a>
+                        <a href="#" class="login_btn"><i class="fa fa-user-circle"></i> Patient Login </a>
+                    </div>
+
+                </div>
+                <div class="bg "></div>
+            </header>
+
+
+
+
+<!--            <div class="my_cam_mob">-->
+<!--                <div><img src="images/connect-cam.svg" alt="connect-cam">-->
+<!--                    <p>Turn On My Cam</p></div>-->
+<!--            </div>-->
+
+            <section class="what_do_you_need_section container-fluid">
+                <div class="my_cam">
+                    <div><img src="images/connect-cam.svg" alt="connect-cam">
+                        <p>Turn On My Cam</p></div>
+                </div>
+                <div class="container what_do_you_need_container">
+                    <form>
+                        <div id="step_1" class="active">
+                            <div class="step_animate">
+                            <h1>What do you need today?</h1>
+                            <h6>Launch a video consultation now for a prescription, lab, or if you not feeling
+                                well.</h6>
+                            <ul class="what_do_you_need_ul">
+                                <li><img src="images/im_not.svg" alt="im_not">
+                                    <p> I'm not Feeling Well</p></li>
+                                <li><img src="images/prescription.svg" alt="prescription">
+                                    <p> A Prescription</p></li>
+                                <li><img src="images/lab_request.svg" alt="lab_request">
+                                    <p> A Lab Request </p></li>
+                                <li><img src="images/covid.svg" alt="covid">
+                                    <p> Covid-19</p></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div id="step_2">
+                            <div class="step_animate">
+                            <h1>How can we reach you?</h1>
+                            <h6>Why do we need you number and email address?
+                                In case the doctor is running a little late, we will send you and SMS text and email to
+                                laucnh your video consultation.</h6>
+                            <div class="form_2">
+                                <input type="phone" id="phone" name="phone" placeholder="Phone Number">
+                                <input type="email" id="email" name="email" placeholder="Your Email">
+                                <div class="form_btn">
+                                    <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                    <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
                                 </div>
                             </div>
-                            <div id="step_2">
-                                <div class="step_animate">
-                                    <h1>How can we reach you?</h1>
-                                    <h6>Why do we need you number and email address?
-                                        In case the doctor is running a little late, we will send you and SMS text and
-                                        email to
-                                        laucnh your video consultation.</h6>
-                                    <div class="form_2">
-                                        <input type="phone" id="phone" name="phone" placeholder="Phone Number">
-                                        <input type="email" id="email" name="email" placeholder="Your Email">
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
-                                        </div>
+                            </div>
+                        </div>
+                        <div id="step_sms">
+                            <div class="step_animate">
+                                <h1>Identity Verification</h1>
+                                <h6>Please check your phone messages for a 4
+                                    digit security and enter it bellow</h6>
+                                <div class="form_sms">
+                                    <input type="phone" id="sms" name="phone" placeholder="____">
+                                    <div class="form_btn">
+                                        <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                        <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
                                     </div>
                                 </div>
                             </div>
-                            <div id="step_sms">
-                                <div class="step_animate">
-                                    <h1>Identity Verification</h1>
-                                    <h6>Please check your phone messages for a 4
-                                        digit security and enter it bellow</h6>
-                                    <div class="form_sms">
-                                        <input type="phone" id="sms" name="phone" placeholder="____">
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
-                                        </div>
+                        </div>
+                        <div id="step_3">
+                            <div class="step_animate">
+                            <h1>What is your name and date of birth?</h1>
+                            <h6>Introduce yourself to the doctor. </h6>
+                            <div class="form_3">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                    <label for="first_name">First name</label>
+                                    <input type="text" id="first_name" name="first_name" placeholder="First name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" id="last_name" name="last_name" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender">
+                                        <option value="Male">Male</option>
+                                        <option value="Famale">Famale</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                    <label for="datepicker">DOB</label>
+                                    <input type="text" id="datepicker" placeholder="12.12.1991">
+                                    </div>
+                                </div>
+
+                                <div class="form_btn">
+                                    <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                    <h5 class="skip_step">Skip this step</h5>
+                                    <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="step_4">
+                            <div class="step_animate">
+                            <h1>Your Insurance Carrier</h1>
+                            <h6>Select your insurance carrier below. Most insurance policies cover telemedicine visits.</h6>
+                            <div class="form_4">
+
+                                <div class="insurance_row">
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/unitedhealthcare.svg" alt="unitedhealthcare">
+                                    </div>
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/cigna.svg" alt="cigna">
+                                    </div>
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/medicare.svg" alt="medicare">
+                                    </div>
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/humana.svg" alt="humana">
+                                    </div>
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/aetna.svg" alt="aetna">
+                                    </div>
+                                    <div class="insurance_col">
+                                        <img src="images/your_insurance/blue-cross.svg" alt="blue-cross">
+                                    </div>
+                                </div>
+
+                                <p>Don't see your insurance carrier? Search by typing below:</p>
+                                <input type="text" id="insurance" name="insurance" placeholder="Type your insurance (like Anthem, CarePlus, etc)">
+                                <div class="insurance_error">Please select your insurance carrier</div>
+                              <div class="form_btn">
+                                    <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                    <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="step_5">
+                            <div class="step_animate">
+                            <div class="form_5">
+                                <div class="shedule_block">
+                                <div class="shedule_left">
+                                    <h2>Shedule an appointment</h2>
+                                    <p><i class="fas fa-home"></i>Dr. He Miami & Coral Gables Acupuncture</p>
+                                    <h5>Telehealth Consultation (Video/Phone)</h5>
+                                    <h6>Typically 10 minutes</h6>
+                                </div>
+                                <div class="shedule_right">
+                                    <div id="sandbox-container">
+                                        <div class="sandbox_datepicker"></div>
+                                    </div>
+                                    <div class="datepicker_time">
+                                        <h3>Thursday, September 4</h3>
+                                            <select id="datepicker_time">
+                                                <option value="Canada">Eastern Time - US & Canada (11:26am)</option>
+                                                <option value="US">Eastern Time - US & Canada (11:26am)</option>
+                                            </select>
+                                        <ul>
+                                            <li class="active">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="disabled">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="disabled">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                            <li class="">9:00 am</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="form_btn">
+                                    <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                    <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div id="step_6">
+                            <div class="step_animate">
+                                <h1>Any notes you would like to add?</h1>
+                                <h6>You can type the reason for visit, symptons, services you looking for, or any notes for your doctor.</h6>
+                                <div class="form_5">
+                                    <textarea rows="10" cols="45" name="text"></textarea>
+                                    <div class="form_btn">
+                                        <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
+                                        <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
                                     </div>
                                 </div>
                             </div>
-                            <div id="step_3">
-                                <div class="step_animate">
-                                    <h1>What is your name and date of birth?</h1>
-                                    <h6>Introduce yourself to the doctor. </h6>
-                                    <div class="form_3">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="first_name">First name</label>
-                                                <input type="text" id="first_name" name="first_name"
-                                                    placeholder="First name">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label for="last_name">Last Name</label>
-                                                <input type="text" id="last_name" name="last_name"
-                                                    placeholder="Last name">
-                                            </div>
+                        </div>
+                    </form>
+                    <div id="video_call">
+                        <div class="video_load">
+                        <svg version="1.1" id="L3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                            <circle fill="none" stroke="#fff" stroke-width="4" cx="50" cy="50" r="44" style="opacity:0.5;"/>
+                            <circle fill="#fff" stroke="#fff" stroke-width="3" cx="8" cy="54" r="6" >
+                         <animateTransform
+                              attributeName="transform"
+                              dur="2s"
+                             type="rotate"
+                              from="0 50 48"
+                              to="360 50 52"
+                              repeatCount="indefinite" />
+
+                              </circle>
+                          </svg>
+                        </div>
+
+                        <div class="user_block">
+                            <div class="user_icon">
+                            <img src="images/user.svg" alt="user" class="user_svg">
+                            <img src="images/security.svg" alt="security" class="security_svg">
+                            <img src="images/browse_file.svg" alt="browse_file" class="browse_svg">
+                            </div>
+                            <div class="user_content">
+                                <img src="images/left.svg" alt="user" id="user_left">
+
+                                <div class="user_content_inner user_content_inner_user active">
+                                    <h3>My profile</h3>
+                                    <div class="my_profile_head">
+                                        <img src="images/emma_lopez.png" alt="emma_lopez">
+                                        <div>
+                                            <h3>Emma Lopez</h3>
+                                            <h6>Female, 32 yrs</h6>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <label for="gender">Gender</label>
-                                                <select id="gender">
-                                                    <option value="Male">Male</option>
-                                                    <option value="Famale">Famale</option>
+                                    </div>
+                                    <div class="my_profile_mail_block">
+                                        <a href="mailto:someemail@gmail.com">someemail@gmail.com</a>
+                                        <a href="tel:+17029704043">+1 (702) 970-4043</a>
+                                    </div>
+                                    <form action="">
+                                        <input type="text">
+                                        <input type="text">
+                                        <div class="profile_row">
+                                            <div>
+                                                <input type="text" placeholder="Miami">
+                                            </div>
+                                            <div>
+                                                <select>
+                                                    <option value="United States">United States</option>
+                                                    <option value="United States">United States</option>
+                                                    <option value="United States">United States</option>
                                                 </select>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <label for="datepicker">DOB</label>
-                                                <input type="text" id="datepicker" placeholder="12.12.1991">
-                                            </div>
-                                        </div>
 
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="skip_step">Skip this step</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="step_4">
-                                <div class="step_animate">
-                                    <h1>Your Insurance Carrier</h1>
-                                    <h6>Select your insurance carrier below. Most insurance policies cover telemedicine
-                                        visits.</h6>
-                                    <div class="form_4">
-
-                                        <div class="insurance_row">
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/unitedhealthcare.svg"
-                                                    alt="unitedhealthcare">
-                                            </div>
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/cigna.svg" alt="cigna">
-                                            </div>
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/medicare.svg" alt="medicare">
-                                            </div>
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/humana.svg" alt="humana">
-                                            </div>
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/aetna.svg" alt="aetna">
-                                            </div>
-                                            <div class="insurance_col">
-                                                <img src="images/your_insurance/blue-cross.svg" alt="blue-cross">
-                                            </div>
-                                        </div>
-
-                                        <p>Don't see your insurance carrier? Search by typing below:</p>
-                                        <input type="text" id="insurance" name="insurance"
-                                            placeholder="Type your insurance (like Anthem, CarePlus, etc)">
-                                        <div class="insurance_error">Please select your insurance carrier</div>
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="step_5">
-                                <div class="step_animate">
-                                    <div class="form_5">
-                                        <div class="shedule_block">
-                                            <div class="shedule_left">
-                                                <h2>Schedule an appointment</h2>
-                                                <p><i class="fas fa-home"></i>Dr. He Miami & Coral Gables Acupuncture
-                                                </p>
-                                                <h5>Telehealth Consultation (Video/Phone)</h5>
-                                                <h6>Typically 10 minutes</h6>
-                                            </div>
-                                            <div class="shedule_right">
-                                                <div id="sandbox-container">
-                                                    <div class="sandbox_datepicker"></div>
-                                                </div>
-                                                <div class="datepicker_time">
-                                                    <h3>Thursday, September 4</h3>
-                                                    <select id="datepicker_time">
-                                                        <option value="Canada">Eastern Time - US & Canada (11:26am)
-                                                        </option>
-                                                        <option value="US">Eastern Time - US & Canada (11:26am)</option>
-                                                    </select>
-                                                    <ul>
-                                                        <li class="active">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="disabled">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="disabled">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                        <li class="">9:00 am</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="step_6">
-                                <div class="step_animate">
-                                    <h1>Any notes you would like to add?</h1>
-                                    <h6>You can type the reason for visit, symptons, services you looking for, or any
-                                        notes for your doctor.</h6>
-                                    <div class="form_5">
-                                        <textarea rows="10" cols="45" name="text"></textarea>
-                                        <div class="form_btn">
-                                            <h5 class="btn_left"><i class="fa fa-long-arrow-left"></i> Back</h5>
-                                            <h5 class="btn_right">Next <i class="fa fa-long-arrow-right"></i></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="video_call">
-                            <div class="video_load">
-                                <svg version="1.1" id="L3" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
-                                    enable-background="new 0 0 0 0" xml:space="preserve">
-                                    <circle fill="none" stroke="#fff" stroke-width="4" cx="50" cy="50" r="44"
-                                        style="opacity:0.5;" />
-                                    <circle fill="#fff" stroke="#fff" stroke-width="3" cx="8" cy="54" r="6">
-                                        <animateTransform attributeName="transform" dur="2s" type="rotate"
-                                            from="0 50 48" to="360 50 52" repeatCount="indefinite" />
-
-                                    </circle>
-                                </svg>
-                            </div>
-
-                            <div class="user_block">
-                                <div class="user_icon">
-                                    <img src="images/user.svg" alt="user" class="user_svg">
-                                    <img src="images/security.svg" alt="security" class="security_svg">
-                                    <img src="images/browse_file.svg" alt="browse_file" class="browse_svg">
-                                </div>
-                                <div class="user_content">
-                                    <img src="images/left.svg" alt="user" id="user_left">
-
-                                    <div class="user_content_inner user_content_inner_user active">
-                                        <h3>My profile</h3>
-                                        <div class="my_profile_head">
-                                            <img src="images/emma_lopez.png" alt="emma_lopez">
+                                        <div class="profile_row">
                                             <div>
-                                                <h3>Emma Lopez</h3>
-                                                <h6>Female, 32 yrs</h6>
+                                                <select>
+                                                    <option value="Florida">Florida</option>
+                                                    <option value="Florida">Florida</option>
+                                                    <option value="Florida">Florida</option>
+                                                </select>
                                             </div>
+                                            <div>
+                                                <input type="text">
+                                            </div>
+
                                         </div>
-                                        <div class="my_profile_mail_block">
-                                            <a href="mailto:someemail@gmail.com">someemail@gmail.com</a>
-                                            <a href="tel:+17029704043">+1 (702) 970-4043</a>
+                                        <label for="reason_for_visit">Reason for visit:</label>
+                                        <textarea id="reason_for_visit"></textarea>
+
+                                        <div class="my_browse_file">
+                                            <input name="browse_file" id="browse_file" type="file">
+                                            <img src="images/browse_file.svg" alt="my_browse_file"> Drop here or <h5 id="my_browse_file">browse file</h5>
                                         </div>
-                                        <form action="">
-                                            <input type="text">
-                                            <input type="text">
-                                            <div class="profile_row">
-                                                <div>
-                                                    <input type="text" placeholder="Miami">
-                                                </div>
-                                                <div>
-                                                    <select>
-                                                        <option value="United States">United States</option>
-                                                        <option value="United States">United States</option>
-                                                        <option value="United States">United States</option>
-                                                    </select>
-                                                </div>
+                                        <label for="history_of_present">History of Present Illness:</label>
+                                        <textarea id="history_of_present"></textarea>
 
-                                            </div>
-                                            <div class="profile_row">
-                                                <div>
-                                                    <select>
-                                                        <option value="Florida">Florida</option>
-                                                        <option value="Florida">Florida</option>
-                                                        <option value="Florida">Florida</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <input type="text">
-                                                </div>
+                                    </form>
 
-                                            </div>
-                                            <label for="reason_for_visit">Reason for visit:</label>
-                                            <textarea id="reason_for_visit"></textarea>
-
-                                            <div class="my_browse_file">
-                                                <input name="browse_file" id="browse_file" type="file">
-                                                <img src="images/browse_file.svg" alt="my_browse_file"> Drop here or <h5
-                                                    id="my_browse_file">browse file</h5>
-                                            </div>
-                                            <label for="history_of_present">History of Present Illness:</label>
-                                            <textarea id="history_of_present"></textarea>
-
-                                        </form>
-
-                                    </div>
-                                    <div class="user_content_inner user_content_inner_security">
-                                        <h3>Security</h3>
-                                    </div>
-                                    <div class="user_content_inner user_content_inner_browse_file">
-                                        <h3>Browse file</h3>
-                                    </div>
+                                </div>
+                                <div class="user_content_inner user_content_inner_security">
+                                    <h3>Security</h3>
+                                </div>
+                                <div class="user_content_inner user_content_inner_browse_file">
+                                    <h3>Browse file</h3>
                                 </div>
                             </div>
+                        </div>
 
-                            <h2>Waiting for your doctor</h2>
+                        <h2>Waiting for your doctor</h2>
+                    </div>
+                </div>
+                <div class="steps">
+                    <div class="profile_pic">
+                      <div class="profile_img_block"><img src="images/profile_pic.png" alt="profile_pic"></div>
+                        <div>
+                            <div class="snippet" data-title=".dot-flashing">
+                                <div class="stage">
+                                    <div class="dot-flashing"></div>
+                                </div>
+                            </div>
+                            <h6>Doctor is being <br>assigned</h6>
                         </div>
                     </div>
-                    <div class="steps">
-                        <div class="profile_pic">
-                            <div class="profile_img_block"><img src="images/profile_pic.png" alt="profile_pic"></div>
-                            <div>
-                                <div class="snippet" data-title=".dot-flashing">
-                                    <div class="stage">
-                                        <div class="dot-flashing"></div>
-                                    </div>
-                                </div>
-                                <h6>Doctor is being <br>assigned</h6>
-                            </div>
+                    <div class="container container_step">
+                        <div>
+                            <div class="step_item_1"><p>What do i need</p>
+                                <div class="div_circle"></div></div>
+                            <div class="step_item_2"><p>Patient Details</p>
+                                <div class="div_circle"></div></div>
+                            <div class="step_item_3"><p>Insurance Details</p>
+                                <div class="div_circle"></div></div>
+                            <div class="step_item_4"><p>Video Consultation</p>
+                                <div class="div_phone"><i class="fa fa-phone"></i></div></div>
                         </div>
-                        <div class="container container_step">
-                            <div>
-                                <div class="step_item_1">
-                                    <p>What do i need</p>
-                                    <div class="div_circle"></div>
-                                </div>
-                                <div class="step_item_2">
-                                    <p>Patient Details</p>
-                                    <div class="div_circle"></div>
-                                </div>
-                                <div class="step_item_3">
-                                    <p>Insurance Details</p>
-                                    <div class="div_circle"></div>
-                                </div>
-                                <div class="step_item_4">
-                                    <p>Video Consultation</p>
-                                    <div class="div_phone"><i class="fa fa-phone"></i></div>
-                                </div>
-                            </div>
 
-                        </div>
                     </div>
-                </section>
-                <section class="sticky_section">
-                    <div class="container sticky_menu_container">
-                        <div class="sticky_menu">
-                            <ul>
-                                <li class="first_sticky_li active"><a href="#sticky_first_block">Getting Started</a>
-                                </li>
-                                <li class="second_sticky_li"><a href="#sticky_second_block">Your Digital Clinic</a></li>
-                                <li class="second_third_li"><a href="#sticky_third_block">How much does it cost?</a>
-                                </li>
-                                <li class="second_fourth_li"><a href="#sticky_fourth_block">Our Doctors</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="sticky_first_block_fluid">
-                        <div class="sticky_first_block container" id="sticky_first_block">
-                            <h2> See a doctor now and get what you need today</h2>
-                            <ul>
-                                <li>Choose what you need today. (Prescription, Lab, General Visit, etc)</li>
-                                <li>Enroll in less than a minute and enter your insurance.</li>
-                                <li>See and talk your doctor.</li>
-                                <li>Get your meds, labs, or other service delivered.</li>
-                                <li>No need to download any apps, use any device or browser.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid sticky_second_block_fluid">
-                        <div class="sticky_second_block container" id="sticky_second_block">
-                            <h2>Your True Digital Clinic</h2>
-                            <div class="row">
-                                <div class="col-sm-6 col-12">
-                                    <img src="images/clinic_icon_1.svg" alt="">
-                                    <div>
-                                        <h3>Prescription Delivery</h3>
-                                        <p>Get a prescription and meds delivered to your door.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12">
-                                    <img src="images/clinic_icon_2.svg" alt="">
-                                    <div>
-                                        <h3>Laboratory request</h3>
-                                        <p>Request from 100’s of laboratory panels.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12">
-                                    <img src="images/clinic_icon_3.svg" alt="">
-                                    <div>
-                                        <h3>Doctor consultation</h3>
-                                        <p>Just not feeling well? See a doctor now to go over your symptoms.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12">
-                                    <img src="images/clinic_icon_4.svg" alt="">
-                                    <div>
-                                        <h3>Doctor’s orders</h3>
-                                        <p>From a wheelchair to an MRI referral, we can produce a doctor’s order for
-                                            most
-                                            healthcare services and products.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid sticky_third_block_fluid">
-                        <div class="sticky_third_block container" id="sticky_third_block">
-                            <h2> See a doctor now and get what you need today</h2>
-                            <div class="question active">
-                                <h3>How much does it cost to use ReconnectCare?</h3>
-                                <div class="answer">
-                                    <p>There is no cost for our service if you have insurance. You’ll only
-                                        pay your standard copay or out-of-pocket expenses (if applicable).</p>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <h3>What insurance plans do you accept?</h3>
-                                <div class="answer">
-                                    <p>There is no cost for our service if you have insurance. You’ll only
-                                        pay your standard copay or out-of-pocket expenses (if applicable).</p>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <h3>What if I don’t have insurance?</h3>
-                                <div class="answer">
-                                    <p>There is no cost for our service if you have insurance. You’ll only
-                                        pay your standard copay or out-of-pocket expenses (if applicable).</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="our_doctors_section" id="sticky_fourth_block">
-                    <div class="container">
-                        <h2>Our Doctors</h2>
+                </div>
+            </section>
+            <section class="sticky_section">
+                <div class="container sticky_menu_container">
+                    <div class="sticky_menu">
                         <ul>
-                            <li class="active" id="all">All</li>
-                            <li id="Pediatrician">Pediatrician</li>
-                            <li id="Dermatologist">Cardiologist</li>
-                            <li id="Urologist">Urologist</li>
-                            <li id="Traumatologist">Traumatologist</li>
+                            <li class="first_sticky_li active"><a href="#sticky_first_block">Getting Started</a></li>
+                            <li class="second_sticky_li"><a href="#sticky_second_block">Your Digital Clinic</a></li>
+                            <li class="second_third_li"><a href="#sticky_third_block">How much does it cost?</a></li>
+                            <li class="second_fourth_li"><a href="#sticky_fourth_block">Our Doctors</a></li>
                         </ul>
                     </div>
-                    <div class="doctors_slider">
+                </div>
 
+                <div class="sticky_first_block_fluid">
+                    <div class="sticky_first_block container" id="sticky_first_block">
+                        <h2> See a doctor now and get</br> what you need today</h2>
+                        <ul>
+                            <li>Choose what you need today. (Prescription, Lab, General Visit, etc)</li>
+                            <li>Enroll in less than a minute and enter your insurance.</li>
+                            <li>See and talk your doctor.</li>
+                            <li>Get your meds, labs, or other service delivered.</li>
+                            <li>No need to download any apps, use any device or browser.</li>
+                        </ul>
                     </div>
-                </section>
+                </div>
 
-
-            </div>
-        </div>
-        <footer>
-            <div class="footer_background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-12">
-                            <h3>About Recconec Care</h3>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <!--                            <li><a href="#">Careers</a></li>-->
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <!--                            <li><a href="#">CA,Privacy policy</a></li>-->
-                            </ul>
-                        </div>
-                        <!--                    <div class="col-md-3 col-sm-4 col-6">-->
-                        <!--                        <h3>Get Help</h3>-->
-                        <!--                        <ul>-->
-                        <!--                            <li><a href="#">Safety</a></li>-->
-                        <!--                            <li><a href="#">Advice</a></li>-->
-                        <!--                            <li><a href="#">Help and FAQs</a></li>-->
-                        <!--                        </ul>-->
-                        <!--                    </div>-->
-                        <!--                    <div class="col-md-3 col-sm-4 col-6">-->
-                        <!--                        <h3>Discover</h3>-->
-                        <!--                        <ul>-->
-                        <!--                            <li><a href="#">HomePay - nanny tax help</a></li>-->
-                        <!--                            <li><a href="#">List your business</a></li>-->
-                        <!--                            <li><a href="#">Benefits programs</a></li>-->
-                        <!--                            <li><a href="#">Become an affiliate</a></li>-->
-                        <!--                            <li><a href="#">Care directory</a></li>-->
-                        <!--                        </ul>-->
-                        <!--                    </div>-->
-                        <div class="col-md-12 col-sm-12 col-12 footer_social_block">
-                            <!--                        <a href="#"><img src="images/app_store.svg" alt=""></a>-->
-                            <!--                        <a href="#"><img src="images/google_play.svg" alt=""></a>-->
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                <div class="container-fluid sticky_second_block_fluid">
+                    <div class="sticky_second_block container" id="sticky_second_block">
+                        <h2>Your True Digital Clinic</h2>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <img src="images/clinic_icon_1.svg" alt="">
+                                <div>
+                                    <h3>Prescription Delivery</h3>
+                                    <p>Get a prescription and meds delivered to your door.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <img src="images/clinic_icon_2.svg" alt="">
+                                <div>
+                                    <h3>Laboratory request</h3>
+                                    <p>Request from 100’s of laboratory panels.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <img src="images/clinic_icon_3.svg" alt="">
+                                <div>
+                                    <h3>Doctor consultation</h3>
+                                    <p>Just not feeling well? See a doctor now to go over your symptoms.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <img src="images/clinic_icon_4.svg" alt="">
+                                <div>
+                                    <h3>Doctor’s orders</h3>
+                                    <p>From a wheelchair to an MRI referral, we can produce a doctor’s order for most
+                                        healthcare services and products.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--                <div class="row footer_line">-->
-
-                    <!--                </div>-->
-                    <!--                <div class="row footer_text_block">-->
-                    <!--                    <div class="col-12">-->
-                    <!--                        <h4>Reconnect Care is the world's largest online destination for care. We connect families with-->
-                    <!--                            caregivers and caring companies to help you be there for the ones you love.</h4>-->
-                    <!--                        <p>Reconnect Care does not employ any care provider or care seeker nor is it responsible for the-->
-                    <!--                            conduct of any care provider or care seeker. Reconnect Care provides information and tools-->
-                    <!--                            to help care seekers and care providers connect and make informed decisions. However, each-->
-                    <!--                            individual is solely responsible for selecting an appropriate care provider or care seeker-->
-                    <!--                            for themselves or their families and for complying with all applicable laws in connection-->
-                    <!--                            with any employment relationship they establish. The information contained in member-->
-                    <!--                            profiles, job posts and applications are supplied by care providers and care seekers-->
-                    <!--                            themselves and is not information generated or verified by Care.com. Care.com does not-->
-                    <!--                            provide medical advice, diagnosis or treatment or engage in any conduct that requires a-->
-                    <!--                            professional license.</p>-->
-                    <!--                    </div>-->
-                    <!--                </div>-->
                 </div>
-                <div class="copyright">
-                    <p>Copyright © 2020 Reconnect Care, Inc. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+                <div class="container-fluid sticky_third_block_fluid">
+                    <div class="sticky_third_block container" id="sticky_third_block">
+                        <h2> See a doctor now and get what you need today</h2>
+                        <div class="question active">
+                            <h3>How much does it cost to use ReconnectCare?</h3>
+                            <div class="answer"><p>There is no cost for our service if you have insurance. You’ll only
+                                pay your standard copay or out-of-pocket expenses (if applicable).</p></div>
+                        </div>
+                        <div class="question">
+                            <h3>What insurance plans do you accept?</h3>
+                            <div class="answer"><p>There is no cost for our service if you have insurance. You’ll only
+                                pay your standard copay or out-of-pocket expenses (if applicable).</p></div>
+                        </div>
+                        <div class="question">
+                            <h3>What if I don’t have insurance?</h3>
+                            <div class="answer"><p>There is no cost for our service if you have insurance. You’ll only
+                                pay your standard copay or out-of-pocket expenses (if applicable).</p></div>
+                        </div>
 
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="our_doctors_section" id="sticky_fourth_block">
+                <div class="container">
+                    <h2>Our Doctors</h2>
+                    <ul>
+                        <li class="active" id="all">All</li>
+                        <li id="Pediatrician">Pediatrician</li>
+                        <li id="Dermatologist">Cardiologist</li>
+                        <li id="Urologist">Urologist</li>
+                        <li id="Traumatologist">Traumatologist</li>
+                    </ul>
+                </div>
+                <div class="doctors_slider">
+
+                </div>
+            </section>
+
+
+        </div>
     </div>
+    <footer>
+        <div class="footer_background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <h3>About Recconec Care</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+<!--                            <li><a href="#">Careers</a></li>-->
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+<!--                            <li><a href="#">CA,Privacy policy</a></li>-->
+                        </ul>
+                    </div>
+<!--                    <div class="col-md-3 col-sm-4 col-6">-->
+<!--                        <h3>Get Help</h3>-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">Safety</a></li>-->
+<!--                            <li><a href="#">Advice</a></li>-->
+<!--                            <li><a href="#">Help and FAQs</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-3 col-sm-4 col-6">-->
+<!--                        <h3>Discover</h3>-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">HomePay - nanny tax help</a></li>-->
+<!--                            <li><a href="#">List your business</a></li>-->
+<!--                            <li><a href="#">Benefits programs</a></li>-->
+<!--                            <li><a href="#">Become an affiliate</a></li>-->
+<!--                            <li><a href="#">Care directory</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+                    <div class="col-md-12 col-sm-12 col-12 footer_social_block">
+<!--                        <a href="#"><img src="images/app_store.svg" alt=""></a>-->
+<!--                        <a href="#"><img src="images/google_play.svg" alt=""></a>-->
+                        <div class="social_link">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="row footer_line">-->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
-    </script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/main.js"></script>
+<!--                </div>-->
+<!--                <div class="row footer_text_block">-->
+<!--                    <div class="col-12">-->
+<!--                        <h4>Reconnect Care is the world's largest online destination for care. We connect families with-->
+<!--                            caregivers and caring companies to help you be there for the ones you love.</h4>-->
+<!--                        <p>Reconnect Care does not employ any care provider or care seeker nor is it responsible for the-->
+<!--                            conduct of any care provider or care seeker. Reconnect Care provides information and tools-->
+<!--                            to help care seekers and care providers connect and make informed decisions. However, each-->
+<!--                            individual is solely responsible for selecting an appropriate care provider or care seeker-->
+<!--                            for themselves or their families and for complying with all applicable laws in connection-->
+<!--                            with any employment relationship they establish. The information contained in member-->
+<!--                            profiles, job posts and applications are supplied by care providers and care seekers-->
+<!--                            themselves and is not information generated or verified by Care.com. Care.com does not-->
+<!--                            provide medical advice, diagnosis or treatment or engage in any conduct that requires a-->
+<!--                            professional license.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Reconnect Care, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
